@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team a"
+            android:textAllCaps="true"
+            android:textSize="32dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textSize="70dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+3 point"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="40dp"
+            android:onClick="addThree"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2 point"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="40dp"
+            android:onClick="addTwo"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="free throw"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="40dp"
+            android:onClick="freehit"
+            />
+
+
+    </LinearLayout>
+  <LinearLayout
+      android:layout_alignParentRight="true"
+      android:layout_width="200dp"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Team b"
+          android:textAllCaps="true"
+          android:textSize="32dp"
+          android:layout_marginLeft="42dp"
+          android:layout_marginTop="40dp"/>
+      <TextView
+          android:id="@+id/teamB"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textAllCaps="true"
+          android:textSize="70dp"
+          android:layout_marginLeft="80dp"
+          android:layout_marginTop="40dp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="+3 point"
+          android:textAllCaps="true"
+          android:textSize="20dp"
+          android:layout_marginLeft="42dp"
+          android:layout_marginTop="40dp"
+          android:onClick="addThreeB"
+          />
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="+2 point"
+          android:textAllCaps="true"
+          android:textSize="20dp"
+          android:layout_marginLeft="42dp"
+          android:layout_marginTop="40dp"
+          android:onClick="addTwob"
+          />
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="free throw"
+          android:textAllCaps="true"
+          android:textSize="16dp"
+          android:layout_marginLeft="42dp"
+          android:layout_marginTop="40dp"
+          android:onClick="freehitB"
+          />
+
+
+  </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="70dp"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
